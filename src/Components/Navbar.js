@@ -19,12 +19,8 @@ const Navbar  = () => {
         let elemRect = element.getBoundingClientRect();
         
         const offset = elemRect.top - bodyRect.top;
-        alert(offset);
-        console.log(bodyRect, offset);
 
         //console.log(`.${sectionName}`);
-
-       
         
         window.scrollTo({
             top: offset,
