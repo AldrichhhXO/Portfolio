@@ -49,7 +49,7 @@
 
 .Navbar-Links {
   justify-content: center;
-  width: 60%;
+  width: 30%;
   
   display: flex;
   border-left: 2px solid black;
@@ -57,10 +57,12 @@
 
 
 /* 
-    Media Queries (Navbar)
+    Media Queries 
 */
 
-@media only screen  and (min-width: 400px) {
+
+
+@media only screen  and (min-width: 300px) {
   .Navbar {
     flex-direction: column;
   }
