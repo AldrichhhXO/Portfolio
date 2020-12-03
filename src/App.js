@@ -47,5 +47,4 @@ const about = "I am a web developer capable of creating full stack " +
 "applications, primarily focused on deploying scalable and optimized " +
 " websites through minimalistic designs"
 const ball_Up_desc = "A web application that feeds current NBA data."
-
 export default App;
