@@ -8,8 +8,9 @@ const Contact = () => {
 
 
     const LogoLink = (props) => (
-        <a href = {props.link} target = "_" rel = "noreferrer">
+        <a href = {props.link} target = "_blank" rel = "noopener noreferrer" >
             <img  
+                className = "logo"
                 src = {props.src}
                 alt = {props.alt}
                 width =  "70px"/>

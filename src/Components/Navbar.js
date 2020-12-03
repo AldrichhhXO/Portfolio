@@ -1,9 +1,5 @@
 import React, {useEffect} from 'react'
-
-
-
 import {Link} from 'react-router-dom'
-
 
 const Navbar  = () => {
 
@@ -26,9 +22,6 @@ const Navbar  = () => {
             top: offset,
             behavior: 'smooth'
         });
-        
-
-        
     }
 
     return (
@@ -37,11 +30,10 @@ const Navbar  = () => {
                 <h1>Aldrich Reboja</h1>
             </div>
             <div className = "Navbar-Links">
-                <Link to ="Projects" onClick = {() => scrollToElement(1)}>Contact</Link>
-                <Link to = "Contact" onClick = {() => scrollToElement(2)}>Projects</Link>
+                <Link to ="Contact" onClick = {() => scrollToElement(1)}>Contact</Link>
+                <Link to = "Projects" onClick = {() => scrollToElement(2)}>Projects</Link>
             </div>
         
-            
         </nav>
     )
 }

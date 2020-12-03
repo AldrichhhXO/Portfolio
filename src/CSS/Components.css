@@ -1,0 +1,32 @@
+@import "./Components/Navbar.css";
+@import "./Components/Project.css";
+
+/*
+  Section header Implementation
+*/
+.Section {
+    margin: 30px 60px 0px;
+    font-family: 'Abel', sans-serif;
+    text-decoration: underline;
+    font-size: 40px;
+  }
+  
+  .About {
+    line-height: 40px;
+    text-align: center;
+  }
+  
+  
+  .Contact {
+    max-width: 480px;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+    
+  }
+  
+  .Contact img {
+    cursor: pointer;
+  }
+  
+  

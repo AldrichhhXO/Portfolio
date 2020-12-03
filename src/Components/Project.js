@@ -9,15 +9,17 @@ const Project = (props) => {
             <div className = "Project-Buttons-div">
                 <a 
                     className = "Project-Button"
-                    href = "https://github.com/jjun44/ODFDS" 
+                    href = {props.githubLink}
                     target = "_">Link to Github</a>
                 <a 
                     className = "Project-Button cta"
-                    href = "https://odfds.herokuapp.com"
+                    href = {props.projectLink }
                     target = "_">Link to website</a>
             </div>
      </div>
     )
 }
+
+const gitLink = "https://github.com/jjun44/ODFDS  https://odfds.herokuapp.com "
 
 export default Project;

@@ -1,0 +1,96 @@
+@import "Components.css";
+
+.main-section {
+  margin-top: 150px;
+}
+
+/* 
+    Media Queries 
+*/
+@media only screen  and (min-width: 300px) {
+  .Navbar {
+    flex-direction: column;
+    max-height: 200px;
+  }
+
+  .Navbar-Title {
+    font-size: 25px;
+    margin: 20px 0;
+    width: 100%;
+  }
+
+  .Navbar-Links {
+    border-left: none;
+    
+  }
+
+  .Section {
+    text-align: center;
+
+  }
+
+  .About {
+    width: 90%;
+    margin: 20px auto;
+    font-size: 20px;
+  }
+
+  .Contact {
+    width: 80%;
+  }
+
+
+  /* Project Card Media Queries */
+  .Project {
+    width: 80vw;
+  }
+
+  .Project h1 {
+    width: 80%;
+    margin: 25px auto;
+    font-family: 'Abel', sans-serif;
+    font-size: 18px;
+  }
+
+  .Project img {
+    width: 75%;
+    height: auto;
+    border-radius: 0.3rem;
+  }
+
+
+  .Project-Buttons-div {
+    width: 70%;
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  .Navbar {
+    flex-direction: row;
+  }
+
+  .Navbar-Title {
+    width: 50%;
+  }
+
+  .Navbar-Links {
+    border-top: none;
+  }
+
+  .Project-Buttons-div {
+    width: 40%;
+  }
+
+
+  .Project h1 {
+    font-size: 35px;
+  }
+
+  .About {
+    width: 50%;
+    max-width: 800px;
+    font-size: 30px;
+    
+  }
+}
+
