@@ -31,7 +31,7 @@ const App = () => {
 				<h1 className = "Section">Contact</h1>	
 				<Contact />
 			</div>
-
+a
 
 			<Footer />
       	</div>
