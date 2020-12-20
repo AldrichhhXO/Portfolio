@@ -10,11 +10,11 @@ const Project = (props) => {
                 <a 
                     className = "Project-Button"
                     href = {props.githubLink}
-                    target = "_">Link to Github</a>
+                    target = "_">View code</a>
                 <a 
                     className = "Project-Button cta"
                     href = {props.projectLink }
-                    target = "_">Link to website</a>
+                    target = "_">Visit the website</a>
             </div>
      </div>
     )

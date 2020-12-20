@@ -6,12 +6,14 @@ import Project from './Components/Project'
 import Contact from './Components/Contact'
 import Footer from './Components/Footer'
 
+// Experimental. 
+import NightMode from "./Components/NightMode"
+
 const App = () => {
   return (
     <Router>
 		<div className="App" id = "scrollContainer">
         	<Navbar />
-
 			<div className = "main-section">
 				<h1 className = "Section">About</h1>
 					<p className = "About">{about}</p>
@@ -27,11 +29,13 @@ const App = () => {
 					projectTitle = "Ball Up | NBA Stat Tracker"
 					image = {BallUp_Image}
 					description = {ball_Up_desc}
+					githubLink = "https://github.com/AldrichhhXO/NBAStatTracker"
 				/>
 				<h1 className = "Section">Contact</h1>	
 				<Contact />
 			</div>
-a
+
+			<NightMode />
 
 			<Footer />
       	</div>
@@ -46,5 +50,5 @@ const BallUp_Image = "Webpage.png"
 const about = "I am a web developer capable of creating full stack " + 
 "applications, primarily focused on deploying scalable and optimized " +
 " websites through minimalistic designs"
-const ball_Up_desc = "A web application that feeds current NBA data."
+const ball_Up_desc = "Frontend application that displays basic stats on NBA players."
 export default App;
