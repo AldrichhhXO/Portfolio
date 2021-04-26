@@ -23,14 +23,14 @@
   
   .Navbar h1 {
     margin: 0;
-    font-family: 'Abel', sans-serif;
+    font-family: 'Merriweather Sans', sans-serif;
     cursor: pointer;
     color: black;
   }
   
   .Navbar a {
-    font-size: 40px;
-    font-family: 'Abel', sans-serif;
+    font-size: 28px;
+    font-family: 'Alegreya Sans', sans-serif;
     margin: 20px 40px;
     text-decoration: none;
     color: black;
@@ -41,7 +41,7 @@
     display: block;
     width: 0;
     height: 2px;
-    background-color: rgba(0,0,0,0.3);
+    background-color: rgba(0, 0, 0, 1);
     transition: width 0.3s ease-in-out;
   }
   

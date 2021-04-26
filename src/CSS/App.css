@@ -1,5 +1,11 @@
 @import "Components.css";
 
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .main-section {
   margin-top: 150px;
 }
@@ -40,57 +46,16 @@
   }
 
 
-  /* Project Card Media Queries */
-  .Project {
-    width: 80vw;
-  }
 
-  .Project h1 {
-    width: 80%;
-    margin: 25px auto;
-    font-family: 'Abel', sans-serif;
-    font-size: 18px;
-  }
-
-  .Project img {
-    width: 75%;
-    height: auto;
-    border-radius: 0.3rem;
-  }
-
-
-  .Project-Buttons-div {
-    width: 70%;
-  }
 }
 
 @media only screen and (min-width: 800px) {
-  .Navbar {
-    flex-direction: row;
-  }
 
-  .Navbar-Title {
-    width: 50%;
-  }
-
-  .Navbar-Links {
-    border-top: none;
-  }
-
-  .Project-Buttons-div {
-    width: 40%;
-  }
-
-
-  .Project h1 {
-    font-size: 35px;
-  }
 
   .About {
     width: 50%;
     max-width: 800px;
     font-size: 30px;
-    
   }
 }
 

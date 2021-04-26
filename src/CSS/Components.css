@@ -1,5 +1,5 @@
 @import "./Components/Navbar.css";
-@import "./Components/Project.css";
+@import "../Components/Project/Project.css";
 
 /*
   Section header Implementation

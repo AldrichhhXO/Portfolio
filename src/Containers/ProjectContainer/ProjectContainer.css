@@ -1,0 +1,10 @@
+.Project-Container {
+    width: 50%;
+    height: 300px;
+    border: 1px solid black;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+}

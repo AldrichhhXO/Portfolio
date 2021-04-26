@@ -2,22 +2,30 @@ import React from 'react';
 import './CSS/App.css';
 import {BrowserRouter as Router} from 'react-router-dom'
 import Navbar from './Components/Navbar'
-import Project from './Components/Project'
 import Contact from './Components/Contact'
 import Footer from './Components/Footer'
+
+
+import ProjectModal from './Components/ProjectModal/ProjectModal'
+
+import ProjectContainer from './Containers/ProjectContainer/ProjectContainer'
 
 const App = () => {
   return (
     <Router>
 		<div className="App" id = "scrollContainer">
-        	<Navbar />
-
+			<ProjectModal />	
+		
 			<div className = "main-section">
 				<h1 className = "Section">About</h1>
 					<p className = "About">{about}</p>
 				<h1 className = "Section">Projects</h1>
+
+				<ProjectContainer />
+
+				{/*
 				<Project 
-					projectTitle = "ODFDS (On Demand Food Delivery Service)"
+					projectTitle = "7YearsLater"
 					image = {ODFDS_image}
 					githubLink = "https://github.com/jjun44/ODFDS"
 					projectLink = "https://odfds.herokuapp.com"
@@ -26,14 +34,14 @@ const App = () => {
 				<Project 
 					projectTitle = "Ball Up | NBA Stat Tracker"
 					image = {BallUp_Image}
+					githubLink = {"https://github.com/AldrichhhXO/NBAStatTracker"}
+					projectLink = {"https://www.yahoo.com"}
 					description = {ball_Up_desc}
 				/>
+				*/}
 				<h1 className = "Section">Contact</h1>	
 				<Contact />
 			</div>
-a
-
-			<Footer />
       	</div>
     </Router>
   );

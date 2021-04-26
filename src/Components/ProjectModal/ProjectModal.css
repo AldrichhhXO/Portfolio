@@ -1,0 +1,82 @@
+.Project-Modal-Container {
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.8);
+    z-index: 10;
+    margin: 0;
+    padding: 0;
+}
+
+.Project-Modal {
+    border-radius: 0.5rem;
+    width: 500px;
+    height: 600px;
+    background: white;
+    margin: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.Project-Modal-Image {
+    width: 100%;
+    height: auto;
+    border-radius: 0.5rem;
+}
+
+.Project-Modal-Description {
+    overflow-y: scroll;
+    height: 45%;
+    width: 90%;
+    margin: auto;
+    margin-top: 0px;
+}
+
+
+.Project-Modal-Description p {
+    font-size: 18px;
+    text-indent: 20px;
+    font-family: 'Alegreya Sans', sans-serif;
+    font-weight: 500;
+    
+}
+
+
+.Modal-Buttons {
+
+    position: absolute;
+    left: 50%;
+    bottom: 30px;
+    transform: translateX(-50%);
+
+    width: 45%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.Modal-Button {
+    background: white;
+    border: 1px solid black;
+    width: 100px;
+    height: 40px;
+    cursor: pointer;
+    transition: 0.3s all ease;
+    font-size: 16px;
+    font-weight: 500;
+    border-radius: 0.2rem;
+}
+
+
+.Emphasized {
+    background-color: darkcyan;
+    color: white;
+    border: darkcyan;
+}
+
+.Modal-Button:hover {
+    background: black;
+    color: white;
+}
