@@ -37,6 +37,7 @@ const App = () => {
 					githubLink = {"https://github.com/AldrichhhXO/NBAStatTracker"}
 					projectLink = {"https://www.yahoo.com"}
 					description = {ball_Up_desc}
+					githubLink = "https://github.com/AldrichhhXO/NBAStatTracker"
 				/>
 				*/}
 				<h1 className = "Section">Contact</h1>	
@@ -54,5 +55,5 @@ const BallUp_Image = "Webpage.png"
 const about = "I am a web developer capable of creating full stack " + 
 "applications, primarily focused on deploying scalable and optimized " +
 " websites through minimalistic designs"
-const ball_Up_desc = "A web application that feeds current NBA data."
+const ball_Up_desc = "Frontend application that displays basic stats on NBA players."
 export default App;

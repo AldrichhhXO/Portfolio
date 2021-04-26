@@ -10,10 +10,26 @@ body {
   margin-top: 150px;
 }
 
+input:checked + .slider:before {
+  -webkit-transform: translateX(25px);
+  -ms-transform: translateX(25px);
+  transform: translateX(25px);
+  background-color: black;
+  box-shadow:  4px 4px 8px #bdbdbd, 
+             -4px -4px 8px #ffffff;
+}
+
+
+
 /* 
     Media Queries 
 */
 @media only screen  and (min-width: 300px) {
+
+  .main-section {
+    margin-top: 225px;
+  }
+
   .Navbar {
     flex-direction: column;
     max-height: 200px;
