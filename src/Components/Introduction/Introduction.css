@@ -1,0 +1,60 @@
+.Introduction-Component {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(40,40,40,0.6);
+}
+
+
+.Introduction-Text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.Introduction-Text h1 {
+    font-family: 'Alegreya Sans', sans-serif;
+    font-weight: 1000;
+    font-size: 3em;
+    margin: 0;
+    
+}
+
+.Introduction-Text h3 {
+    font-family: 'Alegreya Sans', sans-serif;
+    font-size: 33px;
+    text-indent: 20px;
+    margin: 0;
+}
+
+@media only screen and (min-width: 250px) {
+    .Introduction-Text {
+        width: 80%;
+        border: 1px solid black;
+    }
+
+
+    .Introduction-Text h1 {
+        font-size:  2em;
+        text-align: center;
+    }
+
+    .Introduction-Text h3 {
+        font-size: 1.5em;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    .Introduction-Text {
+
+    }
+
+    .Introduction-Text h1 {
+        font-size: 3.5em;
+    }
+
+    .Introduction-Text h3 {
+        font-size: 2.2em;
+    }
+}

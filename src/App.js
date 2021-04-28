@@ -1,51 +1,63 @@
 import React from 'react';
 import './CSS/App.css';
 import {BrowserRouter as Router} from 'react-router-dom'
+
+import MenuButton from './Components/MenuButton/MenuButton'
+
+import Introduction from './Components/Introduction/Introduction'
 import Navbar from './Components/Navbar'
 import Contact from './Components/Contact'
 import Footer from './Components/Footer'
 
+import Loader from './Components/Loader/Loader'
 
 import ProjectModal from './Components/ProjectModal/ProjectModal'
 
 import ProjectContainer from './Containers/ProjectContainer/ProjectContainer'
 
-const App = () => {
-  return (
-    <Router>
-		<div className="App" id = "scrollContainer">
-			<ProjectModal />	
+class App extends React.Component {
+
+	constructor(props) {
+		super(props);
+		this.state = {
+			loading: true
+		}
+	}
+
+	componentDidMount() {
 		
-			<div className = "main-section">
-				<h1 className = "Section">About</h1>
-					<p className = "About">{about}</p>
-				<h1 className = "Section">Projects</h1>
+		setTimeout(() => {
+			this.setState({loading: true})
+		}, 1400)
+		
+	}
 
-				<ProjectContainer />
-
+	render() {
+		if (!this.state.loading) return <Loader />
+		else return (	
+		<Router>
+			<div className="App" id = "scrollContainer">
+			<Introduction />
 				{/*
-				<Project 
-					projectTitle = "7YearsLater"
-					image = {ODFDS_image}
-					githubLink = "https://github.com/jjun44/ODFDS"
-					projectLink = "https://odfds.herokuapp.com"
-					description = {ODFDS_Description}
-				/>
-				<Project 
-					projectTitle = "Ball Up | NBA Stat Tracker"
-					image = {BallUp_Image}
-					githubLink = {"https://github.com/AldrichhhXO/NBAStatTracker"}
-					projectLink = {"https://www.yahoo.com"}
-					description = {ball_Up_desc}
-					githubLink = "https://github.com/AldrichhhXO/NBAStatTracker"
-				/>
+				<MenuButton />
+				
 				*/}
-				<h1 className = "Section">Contact</h1>	
-				<Contact />
+				<div className = "main-section">
+					<h1 className = "Section">About</h1>
+						<p className = "About">{about}</p>
+					<h1 className = "Section">Projects</h1>
+
+					<ProjectContainer />
+					<h1 className = "Section">Contact</h1>	
+					<Contact />
+				</div>
 			</div>
-      	</div>
-    </Router>
-  );
+		</Router>
+		)
+	}
+
+  
+
 }
 
 const ODFDS_Description = " Full stack web application that models basic functionalities" +

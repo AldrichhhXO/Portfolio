@@ -60,14 +60,9 @@ input:checked + .slider:before {
   .Contact {
     width: 80%;
   }
-
-
-
 }
 
 @media only screen and (min-width: 800px) {
-
-
   .About {
     width: 50%;
     max-width: 800px;

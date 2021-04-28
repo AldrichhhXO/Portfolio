@@ -1,0 +1,72 @@
+.Loader-Container {
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+}
+
+
+.Loader-Component {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}   
+
+.Loader-Component h2 {
+    font-family: 'Alegreya Sans', sans-serif;
+}
+
+.Loader {
+    width: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.Circle {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background-color: rgba(20,20,20, 0.8);
+    margin: 5px;
+}
+
+
+.Circle:nth-child(1) {
+    animation: bounce 0.7s infinite;
+} 
+
+.Circle:nth-child(2) {
+    animation: bounce 0.7s infinite;
+    animation-delay: 0.1s;
+}
+
+.Circle:nth-child(3) {
+    animation: bounce 0.7s infinite;
+    animation-delay: 0.2s;
+}
+.Circle:nth-child(4) {
+    animation: bounce 0.7s infinite;
+    animation-delay: 0.3s;
+}
+.Circle:nth-child(5) {
+    animation: bounce 0.7s infinite;
+    animation-delay: 0.4s;
+}
+
+
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0px);
+    }
+    20% {
+        transform: translateY(-15px);
+    }
+    60%, 100% {
+        transform: translateY(0px);
+    }
+}

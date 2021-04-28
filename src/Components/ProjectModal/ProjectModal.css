@@ -9,14 +9,19 @@
 
 .Project-Modal {
     border-radius: 0.5rem;
-    width: 500px;
-    height: 600px;
+    width: 600px;
+    height: 800px;
     background: white;
     margin: auto;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+
+.Project-Modal-Hide {
+    animation: fade 0.5s forwards ease-in;
 }
 
 .Project-Modal-Image {
@@ -26,20 +31,32 @@
 }
 
 .Project-Modal-Description {
-    overflow-y: scroll;
     height: 45%;
     width: 90%;
     margin: auto;
-    margin-top: 0px;
+    margin-top: 30px;
 }
 
 
-.Project-Modal-Description p {
+.Project-Modal-Description h1 {
+    font-size: 18px;
+    text-indent: 20px;
+}
+
+
+.Project-Modal-Description p, ul {
     font-size: 18px;
     text-indent: 20px;
     font-family: 'Alegreya Sans', sans-serif;
     font-weight: 500;
     
+}
+
+.Close-Button {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    cursor: pointer;
 }
 
 
@@ -50,7 +67,7 @@
     bottom: 30px;
     transform: translateX(-50%);
 
-    width: 45%;
+    width: 40%;
     margin: auto;
     display: flex;
     justify-content: space-between;
@@ -79,4 +96,15 @@
 .Modal-Button:hover {
     background: black;
     color: white;
+}
+
+
+@keyframes fade {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
 }
