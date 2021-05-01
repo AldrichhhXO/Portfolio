@@ -1,0 +1,25 @@
+.About-Container {
+    width: 100%;
+    height: fit-content;
+    margin: 100px auto;
+}
+
+
+.About-Container h1, p {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+.About-Container h1 {
+    font-size: 44px;
+    font-family: 'Alegreya Sans', sans-serif;
+
+}
+
+.Section-Text {
+    font-size: 24px;
+    font-family: 'Merriweather Sans', sans-serif;
+    width: 50%;
+    margin: 40px auto;
+}

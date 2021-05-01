@@ -7,7 +7,6 @@ body {
 }
 
 .main-section {
-  margin-top: 150px;
 }
 
 input:checked + .slider:before {
@@ -20,6 +19,21 @@ input:checked + .slider:before {
 }
 
 
+.App {
+  position: relative;
+}
+
+
+
+.Fade-Component {
+  animation: ree 1s forwards;
+}
+
+.Section-Container {
+  opacity: 0;
+}
+
+
 
 /* 
     Media Queries 
@@ -27,7 +41,7 @@ input:checked + .slider:before {
 @media only screen  and (min-width: 300px) {
 
   .main-section {
-    margin-top: 225px;
+
   }
 
   .Navbar {
@@ -70,3 +84,11 @@ input:checked + .slider:before {
   }
 }
 
+@keyframes ree{
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

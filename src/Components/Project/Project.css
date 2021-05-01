@@ -3,98 +3,55 @@
   
 */
 .Project {
-    background-color: green;
-    box-shadow: 5px 5px 10px rgba(0,0,0, 0.2), -5px -5px 10px rgba(180, 180, 180, 0.4);
-    width: 40%;
-    text-align: center;
-    border-radius: 0.5rem;
-    height: 70%;
-    background: url(../../Images/ODFDS.png);
-    background-size: cover;
-    background-position: center;
-    cursor: pointer;
-  
+    width: 100%;
+    border: 1px solid red;
+    position: relative;
+    margin: auto;
+    height: 500px;
   }
   
   .Project img {
-    max-width: 500px;
-    box-shadow: 5px 10px 10px rgba(0,0,0,0.2);
+    width: 400px;    
+    z-index: 0;
+    border-radius: 0.5rem;
   }
-  
-  .Project p {
-    margin: 30px auto 0;
-    width: 70%;
-    font-family: 'Abel', sans-serif;
-    font-weight: 500;
-    font-size: 24px;
-  }
+
 
   .Project-Description {
-    width: 100%;
-    height: 100%;
-    background-color: rgba(255,255,255,0.7);
-    opacity: 0;
-    transition: all 0.5s;
-  }
+    border: 1px solid black;
+    width: 45%;
 
-  .Project-Description-Options {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-  }
-
-
-  .Project-Description:hover {
-    opacity: 1;
-  }
-  
-  .Project-Buttons-div {
-    margin: 0 auto;
-    padding: 30px;
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .Project-Button {
-    border: 1.5px solid rgba(22, 130, 180, 0.849);
-    border-radius: 0.3rem;
-    padding: 10px;
-    text-decoration: none;
-    color:  black;
-    font-family: 'Abel', sans-serif;
-    letter-spacing: 1.5px;
-    font-weight: bolder;
-    transition: 0.3s;
-  }
-  
-  .Project-Button:hover {
-    box-shadow: 5px 5px 5px rgba(0,0,0,0.2);
-    background-color: black;
-    color: white;
-  }
-  
-  .cta {
-    background-color: rgba(22, 130, 180, 0.849);
-    color: white;
   }
 
 
 
   @media only screen and (min-width:250px) {
       /* Project Card Media Queries */
+    
+    .Project {
+      width: 90%;
+      display: flex;
+      justify-content: space-between;
+    }
+
+
+    .Project-Description-Button {
+      font-size: 16px;
+    }
+    
 
     .Project h1 {
       width: 80%;
-      margin: 25px auto;
-      font-family: 'Abel', sans-serif;
-      font-size: 18px;
+      margin: 75px auto;
+      font-family: 'Alegreya Sans', sans-serif;
+      font-weight: 800;
+      font-size: 40px;
     }
 
     .Project img {
-      width: 75%;
-      height: auto;
-      border-radius: 0.3rem;
+      width: 100%;
+      height: 100%;
+      border-radius: 0.5rem;
     }
 
 
@@ -123,5 +80,9 @@
   
     .Project h1 {
       font-size: 35px;
+    }
+
+    .Project-Description-Button {
+      font-size: 21px;
     }
   }

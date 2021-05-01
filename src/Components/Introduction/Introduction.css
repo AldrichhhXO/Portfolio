@@ -1,7 +1,12 @@
 .Introduction-Component {
     width: 100vw;
     height: 100vh;
-    background-color: rgba(40,40,40,0.6);
+    background-image: url(../../Images/yeet.webp);
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    z-index: 0;
 }
 
 
@@ -30,7 +35,7 @@
 @media only screen and (min-width: 250px) {
     .Introduction-Text {
         width: 80%;
-        border: 1px solid black;
+
     }
 
 

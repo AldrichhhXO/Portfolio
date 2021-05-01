@@ -4,7 +4,6 @@ import './ProjectModal.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTimes} from '@fortawesome/free-solid-svg-icons'
 
-import ODFDS from '../../Images/ODFDS.png'
 
 const ProjectModal = (props) => {
 
@@ -18,7 +17,7 @@ const ProjectModal = (props) => {
         <div className = "Project-Modal-Container" id ="Project-Modal">
             <div className = "Project-Modal">
                 <FontAwesomeIcon onClick = {closeModal} icon = {faTimes} size = "2x" className = "Close-Button" />
-                <img className = "Project-Modal-Image" src = {ODFDS}/>
+
                 <div className = "Project-Modal-Description">
                     <h1>ODFDS</h1>
                     <p>A frontend focused web application.  </p>

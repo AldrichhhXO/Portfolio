@@ -1,33 +1,18 @@
 import React from 'react'
+import './Project.css'
+import seven from '../../Images/7yearslater.jpeg'
+
+import ProjectModal from '../../Components/ProjectModal/ProjectModal'
 
 const Project = (props) => {
     return (
-        <div name = "Projects" className = "Project" id = "Project1">
-
-
+        <div className = "Project">
+            <img src = {seven} />
             <div className = "Project-Description">
-               <div className = "Project-Description-Options">
-                   <h1>7YearsLater</h1>
-                   <button>Click For more</button>
-               </div>
+                <h1>7yearslater</h1>
+                <p>Frontend focused web app</p>
+                <p>Constructed a backend to allow for the guests to RSVP</p>
             </div>
-
-            {/*
-            <h1 className = "ProjectTitle">{props.projectTitle}</h1>
-            <img src = {require(`../../Images/${props.image}`)} alt = "ODFDSproject"/>
-            <p>{props.description}</p>
-            <div className = "Project-Buttons-div">
-                <a 
-                    className = "Project-Button"
-                    href = {props.githubLink}
-                    target = "_blank" rel = "noopener noreferrer">Link to Github</a>
-                <a 
-                    className = "Project-Button cta"
-                    href = {props.projectLink }
-                    target = "_blank" rel = "noopener noreferrer">Link to website</a>
-            </div>
-
-            */}
      </div>
     )
 }
