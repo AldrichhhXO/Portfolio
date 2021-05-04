@@ -29,19 +29,17 @@
     text-indent: 20px;
     margin: 0;
     animation: fadeyeet 2s ease forwards;
+   
 }
 
 
-.Introduction-Text h1, h3 {
-    
-}
 
 
 
 @keyframes fadeyeet {
     from {
         opacity: 0;
-        margin-left: 500px;
+        margin-left: 200px;
     }
     to {
         opacity: 1;
@@ -53,7 +51,7 @@
 @keyframes fadefromright {
     from {
         opacity: 0;
-        margin-right: 500px;
+        margin-right: 200px;
     }
     to {
         opacity: 1;

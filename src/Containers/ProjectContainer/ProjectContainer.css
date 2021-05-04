@@ -3,6 +3,34 @@
     margin: 50px auto;
     padding: 20px 0px;
     border: 1px solid black;
+
+    display: flex;
+    align-items: center;
+}
+
+.Project-Description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+
+    height: fit-content;
+    border: 1px solid blue;
+}
+
+
+.Project-Description h1 {
+    width: 95%;
+    border: 1px solid red;
+    text-align: right;
+    font-family: 'Alegreya Sans', sans-serif;
+}
+
+.Project-Description p {
+    width: 100%;
+    border: 1px solid black;
+    font-family: 'Merriweather Sans', sans-serif;
 }
 
 

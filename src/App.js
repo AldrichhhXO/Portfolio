@@ -8,7 +8,7 @@ import MenuButton from './Components/MenuButton/MenuButton'
 import Introduction from './Components/Introduction/Introduction'
 import Navbar from './Components/Navbar'
 import Contact from './Components/Contact'
-import Footer from './Components/Footer'
+import Footer from './Components/Footer/Footer'
 import Loader from './Components/Loader/Loader'
 import ProjectModal from './Components/ProjectModal/ProjectModal'
 
@@ -47,12 +47,14 @@ class App extends React.Component {
 		else return (	
 		<Router>
 			<div className="App" id = "scrollContainer">
-			<Introduction />
+				<Introduction />
 				<div className = "main-section">
 					<About />	
 					<h1 className = "Section">Work</h1>
 					<ProjectContainer />
+					<Footer />
 				</div>
+
 			</div>
 		</Router>
 		)

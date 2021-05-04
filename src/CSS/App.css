@@ -7,7 +7,7 @@ body {
 }
 
 .main-section {
-  
+  width: 100vw;
 }
 
 input:checked + .slider:before {

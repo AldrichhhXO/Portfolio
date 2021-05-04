@@ -11,6 +11,9 @@ export default function About() {
             <p className = "Section-Text">
                 I specialize in building responsive and interactive Web Applications with <strong>React, Node.js, Express,</strong> and <strong>MySQL</strong>
             </p>
+            <p className = "Section-Text">
+                I am currently seeking positions in the bay area.
+            </p>
         </div>
     )
 }
