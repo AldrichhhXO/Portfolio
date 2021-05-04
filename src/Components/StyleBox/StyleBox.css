@@ -1,0 +1,60 @@
+.StyleBox-Component {
+    width: 40%;
+    height: 300px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    display: flex;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+}
+
+.Box {
+    width: 0%;
+    height: 40px;
+    background-color: black;
+    border-radius: 0.3rem;
+    animation: expandBox 1.5s forwards ease;
+    animation-delay: 2s;
+    margin: 10px;
+}
+
+
+.Box:nth-child(2) {
+    background-color: rgb(60,60,60);
+    width: 0%;
+    animation: expandSmallBox 1.5s forwards ease;
+    animation-delay: 2.5s;
+}
+
+
+
+@keyframes expandBox {
+    from {
+        width: 0%;
+    
+    }
+    to {
+        width: 100%;
+    }
+}
+
+
+@keyframes expandSmallBox {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 80%;
+    }
+}
+
+
+@media only screen and (min-width: 250px) {
+    .StyleBox-Component {
+        width: 60%;
+        top: 50px;
+    }
+}

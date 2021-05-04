@@ -8,11 +8,6 @@ const Project = (props) => {
     return (
         <div className = "Project">
             <img src = {seven} />
-            <div className = "Project-Description">
-                <h1>7yearslater</h1>
-                <p>Frontend focused web app</p>
-                <p>Constructed a backend to allow for the guests to RSVP</p>
-            </div>
      </div>
     )
 }

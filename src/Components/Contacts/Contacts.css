@@ -4,21 +4,64 @@
     position: fixed;
     bottom: 20px;
     left: 20px;
-
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    animation: fadeInTop 2s ease forwards;
+    animation-delay: 3.5s;
+    opacity: 0;
+    z-index: 10;
+}
+
+
+.Contacts-Container a {
+    color: black;
+    position: relative;
+    transition: 0.2s all ease;
+}
+
+.Contacts-Container a:hover {
+    transform: translateY(-4px);
 }
 
 
 .Top-Bar {
-    width: 3px;
+    width: 5px;
+    border-radius: 0.4rem;
     height: 60px;
-    background-color: white;
+    background-color: black;
+    
 }
 
 .ContactIcon {
     margin: 15px auto;
     cursor: pointer;
+    
+}
+
+
+@keyframes fadeInTop {
+    from {
+        bottom: -200px;
+        opacity: 0;
+    }
+    to {
+        bottom: 40px;
+        opacity: 1;
+    }
+}
+
+@media only screen and (min-width: 250px) {
+    .Contacts-Container {
+        left: 3px;
+
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    .Contacts-Container {
+        left: 30px;
+
+    }
 }

@@ -9,9 +9,8 @@ export default class ProjectContainer extends Component {
     render() {
         return (
             <div className = "Project-Container">
-                <h1 className = "Section">Work</h1>
-                <Project 
-                    projectImg = {seven} />
+                
+                <Project projectImg = {seven} />
             </div>
         )
     }

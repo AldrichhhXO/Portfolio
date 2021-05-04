@@ -23,3 +23,15 @@
     width: 50%;
     margin: 40px auto;
 }
+
+
+@media only screen and (min-width: 250px) {
+    .Section-Text {
+        width: 70%;
+        font-size: 16px;
+    }
+
+    .Section-Title {
+        font-size: 40px;
+    }
+}

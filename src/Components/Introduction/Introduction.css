@@ -1,10 +1,8 @@
 .Introduction-Component {
     width: 100vw;
     height: 100vh;
-    background-image: url(../../Images/yeet.webp);
-    background-attachment: fixed;
-    background-size: cover;
-    background-position: center;
+    background-color: rgb(230,230,230);
+
     position: relative;
     z-index: 0;
 }
@@ -22,7 +20,7 @@
     font-weight: 1000;
     font-size: 3em;
     margin: 0;
-    
+    animation: fadefromright 2s ease forwards;
 }
 
 .Introduction-Text h3 {
@@ -30,6 +28,37 @@
     font-size: 33px;
     text-indent: 20px;
     margin: 0;
+    animation: fadeyeet 2s ease forwards;
+}
+
+
+.Introduction-Text h1, h3 {
+    
+}
+
+
+
+@keyframes fadeyeet {
+    from {
+        opacity: 0;
+        margin-left: 500px;
+    }
+    to {
+        opacity: 1;
+        margin-left: 0px;
+    }
+}
+
+
+@keyframes fadefromright {
+    from {
+        opacity: 0;
+        margin-right: 500px;
+    }
+    to {
+        opacity: 1;
+        margin-left: 0px;
+    }
 }
 
 @media only screen and (min-width: 250px) {

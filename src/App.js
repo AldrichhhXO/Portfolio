@@ -48,9 +48,9 @@ class App extends React.Component {
 		<Router>
 			<div className="App" id = "scrollContainer">
 			<Introduction />
-			<Contacts />
 				<div className = "main-section">
 					<About />	
+					<h1 className = "Section">Work</h1>
 					<ProjectContainer />
 				</div>
 			</div>

@@ -1,6 +1,8 @@
 import React from 'react'
 import './Introduction.css'
 
+import StyleBox from '../StyleBox/StyleBox'
+
 import Contacts from '../Contacts/Contacts'
 
 export default function Introduction() {
@@ -10,6 +12,8 @@ export default function Introduction() {
                 <h1>Hello, I'm Aldrich Reboja</h1>
                 <h3>Full Stack Software Engineer</h3>
             </div>
+
+            <StyleBox />
             <Contacts />
         </div>
     )
