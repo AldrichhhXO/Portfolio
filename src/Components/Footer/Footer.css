@@ -1,7 +1,6 @@
 .Footer {
     width: 50%;
-    margin: 100px auto;
-    border: 1px solid black;
+    margin: 100px auto 50px;
 }
 
 .Footer-Name {
@@ -43,8 +42,5 @@
 
     .Contact-Container {
         width: 50%;
-        border: 1px solid red;
     }
-
-
 }

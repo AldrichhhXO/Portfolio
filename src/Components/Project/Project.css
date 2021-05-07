@@ -7,30 +7,34 @@
     position: relative;
     margin: auto;
     height: 500px;
-   
-
+    display: flex;
+    align-items: center;
+    
   }
   
   .Project img {   
     z-index: 0;
-
+    opacity: 0.2;
+    height: auto;
+    margin: 0px 10px;
   }
 
 
   .Project-Description {
     width: 100%;
-    border: 1px solid blue;
     position: absolute;
-    height: 100%;
+    margin-right: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    background-color: white;
+    z-index: 10;
+    text-decoration: none;
+    color: black;
   }
 
   .Project-Title {
-    width: 90%;
+    width: 85%;
     text-align: left;
     font-size: 19px;
     font-weight: 700;
@@ -38,11 +42,11 @@
   }
 
   .Project-Text {
-    width: 90%;
-    max-width: 400px;
+    width: 80%;
     text-indent: 20px;
     font-family: 'Merriweather Sans', sans-serif;
     font-size: 13px;
+    opacity: 1;
   }
 
 
@@ -67,6 +71,23 @@
     font-size: 12px;
   }
 
+  .Stack::after {
+    display: block;
+    content: '';
+    width: 0%;
+    height: 2px;
+    background-color: black;
+    transition: all 0.4s ease;
+  }
+
+  .Stack:hover::after {
+    display: block;
+    width: 100%;
+
+  }
+
+
+
 
   @media only screen and (min-width:250px) {
       /* Project Card Media Queries */
@@ -75,7 +96,9 @@
       width: 95%;
       height: auto;
       display: flex;
-      justify-content: space-between;
+      justify-content: space-evenly;
+      color: black;
+      max-width: 650px;
     }
 
 
@@ -94,39 +117,66 @@
 
     .Project img {
       width: 100%;
+      max-width: 650px;
       height: auto;
-      
+      opacity: 0.2;
     }
 
 
     .Project-Buttons-div {
       width: 70%;
     }
+
+
+    .Project-Text {
+      max-width: 400px;
+    }
   }
 
 
   @media only screen and (min-width: 800px) {
-    .Navbar {
-      flex-direction: row;
+    .Project-Text {
+      font-size: 14px;
+    }
+
+    .Stack {
+      font-size: 16px;
+    }
+  }
+
+
+  @media only screen and (min-width: 1400px) {
+    .Project {
+      width: 100%;
+      max-width: none;
     }
   
-    .Navbar-Title {
-      width: 50%;
-    }
-  
-    .Navbar-Links {
-      border-top: none;
-    }
-  
-    .Project-Buttons-div {
-      width: 40%;
-    }
-  
-    .Project h1 {
+    .Project-Title {
       font-size: 35px;
     }
 
-    .Project-Description-Button {
-      font-size: 21px;
+    .Project-Text {
+      font-size: 17px;
+      width: 100%;
+      max-width: 600px;
     }
+
+    .Project img {
+      opacity: 1;
+      width: 80%;
+    }
+
+
+    .Project-Description {
+      position: relative;
+      max-width: 700px;
+      box-shadow: 5px 10px 10px rgba(0,0,0,0.1), -5px 10px 20px rgba(0,0,0,0.1);
+      height: 90%;
+      transition: all 0.3s ease;
+    }
+
+    .Project-Description:hover {
+      box-shadow: 5px 10px 10px rgba(0,0,0,0.2), -5px 10px 20px rgba(0,0,0,0.2);
+    }
+
   }

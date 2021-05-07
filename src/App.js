@@ -1,20 +1,12 @@
 import React from 'react';
 import './CSS/App.css';
 import {BrowserRouter as Router} from 'react-router-dom'
-
 import About from './Components/About/About'
-import MenuButton from './Components/MenuButton/MenuButton'
-
 import Introduction from './Components/Introduction/Introduction'
-import Navbar from './Components/Navbar'
-import Contact from './Components/Contact'
 import Footer from './Components/Footer/Footer'
 import Loader from './Components/Loader/Loader'
-import ProjectModal from './Components/ProjectModal/ProjectModal'
-
-import Contacts from './Components/Contacts/Contacts'
-
 import ProjectContainer from './Containers/ProjectContainer/ProjectContainer'
+import ContactMe from './Components/ContactMe/ContactMe'
 
 class App extends React.Component {
 	constructor(props) {
@@ -52,9 +44,9 @@ class App extends React.Component {
 					<About />	
 					<h1 className = "Section">Work</h1>
 					<ProjectContainer />
+					<ContactMe />
 					<Footer />
 				</div>
-
 			</div>
 		</Router>
 		)

@@ -1,11 +1,11 @@
 .Project-Container {
-    width: 80%;
+    width: 85%;
     margin: 50px auto;
     padding: 20px 0px;
-    border: 1px solid black;
     position: relative;
     display: flex;
     align-items: center;
+    box-shadow: 0px 10px 10px rgba(0,0,0,0.2);
 }
 
 
@@ -15,5 +15,5 @@
     .Project-Container {
         width: 80%;
     }
-
 }
+
